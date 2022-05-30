@@ -11,5 +11,6 @@ int main()
     printf("The address of j is %u\n", &j);
     printf("The value of j is %u\n", *(&j));
     printf("The value of i is %u\n", *(*(&j)));
+    printf("The value of i is %u.\n", *(&i));
     return 0;
 }
