@@ -1,27 +1,19 @@
 #include <stdio.h>
 
-int sum(int *i, int *j);
-int average(int *x, int *y);
+void sumAndAverage(int *a, int *b)
+{
+    float i = *a;
+    float j = *b;
+    printf("The sum and average is %0.2f and %0.2f.\n", (i + j), (i + j) / 2);
+}
 
 int main()
 {
     int a, b;
-    printf("Enter first natural number: ");
+    printf("Enter a natural number for a: ");
     scanf("%d", &a);
-    printf("Enter second natural number: ");
+    printf("Enter a natural number for b: ");
     scanf("%d", &b);
-    printf("The values are %u and %u.\n", *(&a), *(&b));
-
-    printf("The sum and average of these two numbers is %u and %u respectively.\n", sum(&a, &b), average(&a, &b));
+    sumAndAverage(&a, &b);
     return 0;
-}
-
-int sum(int *i, int *j)
-{
-    return *i + *j;
-}
-
-int average(int *x, int *y)
-{
-    return (*x + *y) / 2;
 }
