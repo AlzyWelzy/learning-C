@@ -1,17 +1,20 @@
 #include <stdio.h>
 
-int tenTimes(int *j);
+void tenTimes(int *j);
 
 int main()
 {
-    int i;
+    int a;
     printf("Enter a number: ");
-    scanf("%d", &i);
-    printf("The 10 times of this %u value is %u.\n", *&i, tenTimes(&i));
+    scanf("%d", &a);
+    int *ptr = &a;
+    tenTimes(*&ptr);
+    printf("%d\n", a);
     return 0;
 }
 
-int tenTimes(int *j)
+void tenTimes(int *j)
 {
-    return 10 * (*j);
+    *j = *j * 10;
+    // printf("The ten times of this variable is %d.\n", *j);
 }
