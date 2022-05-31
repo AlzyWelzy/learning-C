@@ -9,7 +9,6 @@ int main()
     scanf("%d", &a);
     tenTimes(a);
     printf("%d\n", a);
-    printf("The ten times of this variable (a) is %d.\n", a);
     return 0;
 }
 
