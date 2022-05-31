@@ -3,7 +3,7 @@
 void sumAndAverage(int a, int b, int *sum, float *avg)
 {
     *sum = a + b;
-    *avg = *sum / 2;
+    *avg = (float)(*sum) / 2;
 }
 
 int main()
