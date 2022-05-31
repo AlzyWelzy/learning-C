@@ -3,12 +3,12 @@
 int main()
 {
     int studentMarks[5];
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < sizeof(studentMarks) / 4; i++)
     {
         printf("Enter marks for student %d: ", (i + 1));
         scanf("%d", &studentMarks[i]);
     }
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < sizeof(studentMarks) / 4; i++)
     {
         printf("Marks of student %d is %d.\n", (i + 1), studentMarks[i]);
     }
