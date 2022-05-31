@@ -8,7 +8,7 @@ int main()
     printf("Enter a number: ");
     scanf("%d", &a);
     tenTimes(a);
-    printf("%d\n", a);
+    printf("LOOK IT DIDN'T CHANGED THE VALUE OF A VARIABLE! %d\n", a);
     return 0;
 }
 
