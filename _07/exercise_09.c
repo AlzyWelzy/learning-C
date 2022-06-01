@@ -10,9 +10,10 @@ int main()
         {
             for (int k = 0; k < 4; k++)
             {
-                printf("The address of arr[%d][%d][%d] is %u.\n", i, j, k, &arr[i][j][k]);
+                printf("The address of arr[%d][%d][%d] is %u.\n", i + 1, j + 1, k + 1, &arr[i][j][k]);
             }
         }
     }
+
     return 0;
 }
