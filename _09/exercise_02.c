@@ -16,17 +16,17 @@ vector sumVector(vector v1, vector v2)
 
 int main()
 {
-    vector v1, v2;
+    vector v1, v2, sum;
 
     v1.x = 34;
     v1.y = 54;
-    printf("X dim is %d and y dim is %d.\n", v1.x, v1.y);
+    printf("X dim is %d and Y dim is %d.\n", v1.x, v1.y);
 
     v2.x = 64;
     v2.y = 104;
-    printf("X dim is %d and y dim is %d.\n", v2.x, v2.y);
+    printf("X dim is %d and Y dim is %d.\n", v2.x, v2.y);
 
-    vector sum = sumVector(v1, v2);
+    sum = sumVector(v1, v2);
     printf("X dim is %d and Y dim is %d.\n", sum.x, sum.y);
 
     return 0;
