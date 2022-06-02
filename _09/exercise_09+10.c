@@ -12,7 +12,7 @@ void display(date d)
     printf("The date is %d/%d/%d.\n", d.year, d.month, d.date);
 }
 
-void dateCompare(date d1, date d2)
+int dateCompare(date d1, date d2)
 {
     if (d1.year > d2.year)
     {
@@ -49,8 +49,11 @@ void dateCompare(date d1, date d2)
 int main()
 {
     date d1 = {22, 06, 02}; // 2002, June 02
-    date d2 = {21, 02, 12}; // 2002, June 02
+    date d2 = {22, 06, 02}; // 2002, June 02
     display(d1);
     display(d2);
+
+    int a = dateCompare(d1, d2);
+    printf("Date Comparison function returns: %d.\n", a);
     return 0;
 }
