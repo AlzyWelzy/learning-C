@@ -3,8 +3,18 @@
 int main()
 {
     FILE *ptr;
-    ptr = fopen("fdemoC.txt", "r");
-    char c = fgetc(ptr);
-    printf("The value of my character is %c.\n", c);
+
+    // ptr = fopen("fgetDemoC.txt", "r");
+
+    // char c = fgetc(ptr);
+
+    // printf("The value of my character is %c.\n", fgetc(ptr));
+    // printf("The value of my character is %c.\n", fgetc(ptr));
+    // printf("The value of my character is %c.\n", fgetc(ptr));
+
+    ptr = fopen("fputDemoC.txt", "w");
+
+    putc('D', ptr);
+    fclose(ptr);
     return 0;
 }
