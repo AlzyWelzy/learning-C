@@ -19,6 +19,7 @@ int main()
     {
         printf("The value of %d element is %d\n", i, ptr[i]);
     }
+    printf("The size of ptr is %d\n", sizeof(ptr));
 
     free(ptr);
     printf("freed memory that was used by ptr\n");
