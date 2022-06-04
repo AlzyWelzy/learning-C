@@ -36,6 +36,7 @@ int snakeWaterGun(char you, char comp)
 // use pointer of cChoice to change the value of cChoice to 's' or 'w' or 'g' through random integer
 void computerChoice(char *cChoice)
 {
+    srand(time(0));
     int random = rand() % 3;
     if (random == 0)
     {
