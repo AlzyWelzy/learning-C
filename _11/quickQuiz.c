@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main()
 {
-    int *ptr;
+    float *ptr;
     printf("The size of int is %d\n", sizeof(int));
     printf("The size of int* is %d\n", sizeof(ptr));
     printf("The size of float is %d\n", sizeof(float));
@@ -34,16 +34,16 @@ int main()
 
     //
 
-    ptr = (int *)malloc(6 * sizeof(int));
+    ptr = (float *)malloc(6 * sizeof(float));
     for (int i = 0; i < 6; i++)
     {
         printf("Enter the value of %d element.\n", i);
-        scanf("%d", &ptr[i]);
+        scanf("%f", &ptr[i]);
     }
 
     for (int i = 0; i < 6; i++)
     {
-        printf("The value of %d element is %d\n", i, ptr[i]);
+        printf("The value of %d element is %f\n", i, ptr[i]);
     }
     return 0;
 }
